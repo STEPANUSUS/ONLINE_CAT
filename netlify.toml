@@ -1,7 +1,7 @@
 [build]
-  functions = "netlify/functions"
+  publish = "public"  # Убедитесь, что путь к вашей директории с файлами правильный
 
 [[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
+  from = "/*"
+  to = "/index.html"
   status = 200
